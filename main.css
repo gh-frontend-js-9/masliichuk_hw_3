@@ -72,6 +72,10 @@ header > .container{
     font-family: 'Montserrat', sans-serif;
 }
 
+.title-mobile{
+    display: none;
+}
+
 .welcome-wrapper h1{
     color: #ffffff;
     font-size: 82px;
@@ -532,11 +536,6 @@ footer .footer .release{
     height: 100%;
 }
 
-.fork-sub-pricing .fork-pricing .wrapper:hover{
-    width: 105%;
-    margin-left: -2.5%;
-}
-
 .fork-sub-pricing .fork-pricing .wrapper{
     display: flex;
 }
@@ -616,21 +615,156 @@ footer .footer .release{
     margin: 77px 120px 15px;
 }
 
+@media screen and (min-width: 992px) {
+    .fork-sub-pricing .pricing-item:hover{
+        position: absolute;
+        width:100%;
+        height: auto;
+        margin-top: -35px;
+        background-color: rgba(0, 0, 0, 0.2)
+    }
+    .fork-sub-pricing .pricing-item:hover .price {
+        font-size: 82px;
+    }
+    .fork-sub-pricing .pricing-item:hover .btn-purchase {
+        margin-top: 90px;
+    }
+    .fork-sub-pricing .pricing-item:hover .title-pricing {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding-top: 65px;
+    }
+    .fork-sub-pricing .fork-pricing .wrapper:hover{
+        width: 105%;
+        margin-left: -2.5%;
+    }
+}
 
-.fork-sub-pricing .pricing-item:hover{
-    position: absolute;
-    width:100%;
-    height: auto;
-    margin-top: -35px;
-    background-color: rgba(0, 0, 0, 0.2)
-}
-.fork-sub-pricing .pricing-item:hover .price {
-    font-size: 82px;
-}
-.fork-sub-pricing .pricing-item:hover .btn-purchase {
-    margin-top: 90px;
-}
-.fork-sub-pricing .pricing-item:hover .title-pricing {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding-top: 65px;
+@media screen and (max-width: 991px) {
+
+    .btn-default {
+        padding: 25px;
+    }
+
+    .welcome-wrapper h1 {
+        font-size: 60px;
+    }
+
+    header > .container{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-bar a{
+        display: block;
+    }
+
+    .logo a{
+        display: flex;
+    }
+
+    .socials{
+        display: block;
+    }
+
+    .socials .fab{
+        margin-right: 50px;
+    }
+    .btn-social{
+        padding: 15px 100px 15px 50px;
+        min-width: 322px;
+    }
+    .talking-about-fork .about-fork-row{
+        display: block;
+    }
+
+    .talking-about-fork .about-fork-item{
+        margin:0 auto;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .fork-sub-pricing .fork-pricing .wrapper{
+        display: block;
+    }
+
+    .fork-sub-pricing .fork-pricing .wrapper .wrap{
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+
+    .subscribe .container{
+        display: block;
+        text-align: center;
+    }
+
+    .container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    footer .footer-desc{
+        width: 100%;
+        padding: 0;
+    }
+
+    .what-you-get .container {
+        display: block;
+    }
+
+    .what-you-get .left-side,
+    footer .footer-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .what-you-get .right-side {
+        display: none;
+    }
+
+    .fork-sub-pricing .fork-pricing .wrapper .wrap {
+        width: 90%;
+    }
+
+    .fork-sub-pricing .note {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .subscribe .sub-form form {
+        display: flex;
+    }
+
+    .subscribe form input {
+        padding: 18px 30px;
+    }
+
+    .revol-editor h2 {
+        font-size: 35px;
+    }
+
+    footer .footer .container {
+        display: block;
+    }
+
+    header .logo a{
+        justify-content: center;
+    }
+
+    .welcome-wrapper{
+        background-image: url(img/welcome-mobile.jpg);
+    }
+
+    .talking-about-fork{
+        background-image: url(img/talking-mobile.png);
+    }
+
+    .title-mobile{
+        display: block;
+        color: #8d81ac;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0;
+    }
 }
